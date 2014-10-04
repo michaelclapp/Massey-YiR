@@ -21,23 +21,9 @@
 </head>
 
 <body>
-    <div id="vcuIdentityWrapper" class="identity-gold">
-        <header id="vcuIdentity">
-            <h1><a title="Virginia Commonwealth University" target="_blank" href="http://www.vcu.edu">Virginia Commonwealth University</a>
-            </h1>
-            <h2><a title="VCU Make it real." target="_blank" href="http://www.makeitreal.vcu.edu">Make it real.</a>
-            </h2>
-        </header>
-    </div>
+    <!-- @include('_layout/vcu-identity.html') -->
 
-    <div class="header container module">
-        <h1>
-            <a class="pull-left" href="http://www.massey.vcu.edu">
-                <img src="http://www.massey.vcu.edu/media/massey-cancer-center/style-assets/images/massey.png" alt="MCC" />
-            </a>
-        </h1>
-        <h2>2013/2014 Philanthropic Review</h2>
-    </div>
+    <!-- @include('_layout/page-title.html') -->
 
     <div class="separator hidden-sm hidden-xs"></div>
 
@@ -55,27 +41,9 @@
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Inspiring Stories <span class="caret"></span></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="#">Leading Progress</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Action</a>
-                    </li>
-                    <li><a href="#">You Inspire Us</a>
-                    </li>
-                    <li><a href="#">Virginia's Cancer Resource</a>
-                    </li>
-                    <li><a href="#">Donor Listing</a>
-                    </li>
-                    <li><a href="#">Board Listing</a>
-                    </li>
-                    <li><a href="#">Research for Life</a>
-                    </li>
-                </ul>
+                
+                <!-- @include('_layout/main.html') -->
+
             </div>
             <!-- /.navbar-collapse -->
         </div>
@@ -85,41 +53,20 @@
     <div class="container content">
         <div class="row">
             <div class="col-md-9 col-md-push-3">
-                <ol class="breadcrumb">
-                    <li><a href="#">Home</a>
-                    </li>
-                    <li><a href="#">Library</a>
-                    </li>
-                    <li class="active">Data</li>
-                </ol>
-                <h2>Page title</h2>
 
-                <!-- @include('general-content.html') -->
+                <!-- @include('_layout/breadcrumbs.html') -->
 
-                <!-- @include('jumbotron.html') -->
+                <!-- @include('_layout/current-page.html') -->
 
-                <!-- @include('general-content.html') -->
+                <!-- @include('_comp/jumbotron.html') -->
+
+                <!-- @include('_comp/general-content.html') -->
 
             </div>
             <div class="sidebar col-md-3 col-md-pull-9 hidden-xs hidden-sm">
-                <ul class="nav navbar-nav">
-                    <li><a href="#">Inspiring Stories</a>
-                        <ul>
-                            <li><a href="#">Second lvl</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li><a href="#">You Inspire Us</a>
-                    </li>
-                    <li><a href="#">Virginia's Cancer Resource</a>
-                    </li>
-                    <li><a href="#">Donor Listing</a>
-                    </li>
-                    <li><a href="#">Board Listing</a>
-                    </li>
-                    <li><a href="#">Research for Life</a>
-                    </li>
-                </ul>
+                
+                <!-- @include('_layout/sidebar-nav.html') -->
+
             </div>
         </div>
     </div>
@@ -128,27 +75,15 @@
         <div class="container module">
             <div class="row">
                 <div class="col-md-4">
-                    <p><a href="http://www.vcu.edu" alt="Virginia Commonwealth University">Virgina Commonwealth University</a>
-                        <br />
-                        <a href="http://www.massey.vcu.edu" alt="Massey Cancer Center">Massey Cancer Center</a>
-                        <br />401 College Street, P.O. Box 980037
-                        <br />Richmond, Virginia 23298-0037</p>
-                    <p>Last Updated: 09/11/2014
-                        <br />
-                    </p>
+
+                    <!-- @include('_layout/footer.html') -->
+
                 </div>
 
                 <div class="col-md-8">
-                    <ul class="social">
-                        <li><a href="#"><i class="fa fa-facebook fa-2x"></i></a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-twitter fa-2x"></i></a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-instagram fa-2x"></i></a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-youtube fa-2x"></i></a>
-                        </li>
-                    </ul>
+
+                    <!-- @include('_layout/social-media.html') -->
+                    
                 </div>
 
             </div>
@@ -176,8 +111,7 @@
     <script href="js/_init.js"></script>
     <!-- endbuild -->
 
-    <!-- GOOGLE ANALYTICS -->
-    <!-- GOOGLE ANALYTICS END-->
+    <!-- @include('_layout/google-analytics.html') -->
 
     <!--REMOVE BEFORE PRODUCTION -->
     <script src="http://localhost:35729/livereload.js"></script>
