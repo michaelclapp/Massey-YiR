@@ -61,6 +61,7 @@ ul.media-list
     border-color: #ebccd1
 
 .jumbotron
+  margin: 0
   @if $vcu-identity == $vcu-identity-gold
     background: $vcu-identity-gold
     color: $black
@@ -70,6 +71,8 @@ ul.media-list
     color: $font-color
     a
       color: $vcu-identity-gold
+  .container &
+    margin: $pad 0
 
 .container .carousel
   margin-bottom: $pad
