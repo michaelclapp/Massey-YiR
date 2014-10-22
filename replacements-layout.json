@@ -7,5 +7,6 @@
           {"from":"<!-- @include('_layout/footer.html') -->" , "to":"<t4 type='navigation' id='2271'/>"},
           {"from":"<!-- @include('_layout/sidebar-nav.html') -->" , "to":"<t4 type='navigation' id='2289'/>"},
           {"from":"<!-- @include('_layout/homepage-interactive.html') -->" , "to":"<t4 type='navigation' id='2273'/>"},
+          {"from":"<!-- @include('_layout/test-nav.html') -->" , "to":"<t4 type='navigation' id='XXXX'/>"},
           {"from":"<!-- @include('_layout/google-analytics.html') -->" , "to":"<t4 type='navigation' id='2275'/>"}
 ]
